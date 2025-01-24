@@ -78,9 +78,30 @@ body {
 .hero-image {
     width: 100%;
     height: auto;
-    margin: 2rem 0;
+    margin: 2rem;
+    max-width: calc(100% - 4rem);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f8f9fa;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 8px;
+}
+
+.hero-cta h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-cta p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 /* Navigation Styles */
@@ -163,8 +184,9 @@ body {
 
 .program-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
+    object-position: top center;
     border-radius: 4px;
     transition: transform 0.5s ease;
 }
@@ -196,10 +218,13 @@ body {
 
 .program-detail-image {
     width: 100%;
-    max-height: 400px;
+    max-height: 300px;
+    max-width: 600px;
+    display: block;
+    margin: 2rem auto;
     object-fit: cover;
+    object-position: top center;
     border-radius: 8px;
-    margin: 2rem 0;
 }
 
 .program-content {
@@ -226,4 +251,150 @@ body {
     border-radius: 8px;
     text-align: center;
     margin: 3rem 0;
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.coming-soon h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.coming-soon p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* School History Page Styles */
+.history-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.history-content p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.history-content h1 {
+    color: #333;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.history-content h2 {
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.history-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.history-content .timeline-entry {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid #007bff;
+}
+
+.history-content .timeline-date {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.history-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.history-image-container {
+    width: 100%;
+}
+
+.history-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.history-image-container img:hover {
+    opacity: 0.9;
+}
+
+.history-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.history-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Terminology Page Styles */
+.terminology-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.terminology-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.terminology-group {
+    margin-bottom: 3rem;
+}
+
+.terminology-group h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+.term-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.term-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.term-item .korean {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.term-item .english {
+    color: #666;
 } 

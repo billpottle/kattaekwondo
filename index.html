@@ -3,94 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Under Construction</title>
+    <title>Korean Academy of Taekwondo Online</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <main>
-        <div class="top-bar">
-            <div class="phone-number">(720) 295-4853</div>
-            <div class="social-icons">
-                <a href="https://facebook.com/kattkd" target="_blank">
-                    <img src="images/facebook.svg" alt="Facebook">
-                </a>
-                <a href="https://youtube.com/kattkd" target="_blank">
-                    <img src="images/youtube.svg" alt="YouTube">
-                </a>
-                <a href="https://www.instagram.com/kat_tkdjj" target="_blank">
-                    <img src="images/instagram.svg" alt="Instagram">
-                </a>
-            </div>
-        </div>
-
-        <nav class="main-nav">
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Programs</a>
-                    <ul class="dropdown">
-                        <li><a href="programs/kids.html">Kids Program</a></li>
-                        <li><a href="programs/adults.html">Adults Program</a></li>
-                        <li><a href="programs/bjj.html">BJJ Program</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                    <ul class="dropdown">
-                        <li><a href="about/school-history.html">School History</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Students</a>
-                    <ul class="dropdown">
-                        <li><a href="students/requirements.html">Requirements</a></li>
-                        <li><a href="students/app.html">App</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Taekwondo</a>
-                    <ul class="dropdown">
-                        <li><a href="taekwondo/history.html">History</a></li>
-                        <li><a href="taekwondo/biomechanics.html">Biomechanics</a></li>
-                        <li><a href="taekwondo/books.html">Books</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
+        <div class="include-html" data-component="header"></div>
+    
         <img 
             src="images/hero.jpeg"
             alt="Hero image"
             class="hero-image"
         />
         
-        <div class="main-content">
-            <div class="message">
-                <p>This site is currently under construction. Please visit <a href="https://www.kataurora.com">www.kataurora.com</a></p>
-            </div>
+        <div class="hero-cta">
+            <h2>Start Your Martial Arts Journey Today</h2>
+            <p>Experience the transformative power of martial arts with a free trial class</p>
+            <a href="https://www.kataurora.com/book-online" class="program-button" target="_blank">Book Your Free Trial</a>
         </div>
-
+        
         <div class="programs">
             <div class="program-box">
                 <img src="images/kids.jpg" alt="Kids Taekwondo Class" class="program-image">
                 <h2>Kids Program</h2>
                 <p>Our kids program focuses on building confidence, discipline, and respect while learning martial arts in a fun, safe environment. Classes are structured to develop both physical skills and character, helping children become their best selves.</p>
-                <a href="programs/kids.html" class="program-button">Learn More</a>
+                <a href="pages/programs/kids.html" class="program-button">Learn More</a>
             </div>
 
             <div class="program-box">
                 <img src="images/adults.jpg" alt="Adult Taekwondo Class" class="program-image">
                 <h2>Adults Program</h2>
                 <p>Train in traditional Taekwondo while getting fit and learning practical self-defense. Our adult classes offer a perfect blend of physical conditioning, technical training, and mental discipline suitable for all experience levels.</p>
-                <a href="programs/adults.html" class="program-button">Learn More</a>
+                <a href="pages/programs/adults.html" class="program-button">Learn More</a>
             </div>
 
             <div class="program-box">
                 <img src="images/bjj.jpg" alt="BJJ Training" class="program-image">
                 <h2>BJJ Program</h2>
                 <p>Brazilian Jiu-Jitsu classes focus on ground techniques, submissions, and effective self-defense. Learn from experienced instructors in a welcoming environment that emphasizes technique, strategy, and continuous improvement.</p>
-                <a href="programs/bjj.html" class="program-button">Learn More</a>
+                <a href="pages/programs/bjj.html" class="program-button">Learn More</a>
             </div>
         </div>
     </main>
+
+    <script src="js/components.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html> 
