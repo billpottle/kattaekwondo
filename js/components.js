@@ -75,9 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hamburger = document.querySelector('.hamburger');
     const navItems = document.querySelector('.nav-items');
+    const mainNav = document.querySelector('.main-nav');
 
     hamburger.addEventListener('click', () => {
         navItems.classList.toggle('active');
+        mainNav.classList.toggle('active');
         hamburger.classList.toggle('active');
     });
 }); 
