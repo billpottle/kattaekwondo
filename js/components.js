@@ -23,6 +23,11 @@ function includeHTML() {
                             <img src="${imagePath}/instagram.svg" alt="Instagram">
                         </a>
                     </div>
+                    <button class="hamburger" aria-label="Toggle navigation">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
                 </div>
 
                 <nav class="main-nav">
@@ -65,4 +70,14 @@ function includeHTML() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', includeHTML); 
+document.addEventListener('DOMContentLoaded', () => {
+    includeHTML();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navItems = document.querySelector('.nav-items');
+
+    hamburger.addEventListener('click', () => {
+        navItems.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+}); 
