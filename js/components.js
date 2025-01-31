@@ -60,6 +60,7 @@ function includeHTML() {
                             <a href="#" class="nav-link">Taekwondo</a>
                             <ul class="dropdown">
                                 <li><a href="${pagesPath}/taekwondo/biomechanics.html">Biomechanics</a></li>
+                                <li><a href="${pagesPath}/taekwondo/benefits.html">Benefits</a></li>
                                 <li><a href="${pagesPath}/taekwondo/books.html">Books</a></li>
                             </ul>
                         </li>

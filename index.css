@@ -658,4 +658,163 @@ body {
     .main-nav.active {
         transform: translateY(0);
     }
+}
+
+/* Scientific Benefits Section */
+.benefits-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.benefits-grid {
+    margin: 2rem 0;
+}
+
+.benefit-category {
+    margin-bottom: 3rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.benefit-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-category h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.benefit-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.benefit-card:last-child {
+    border-bottom: none;
+}
+
+.benefit-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.benefit-content {
+    color: #666;
+}
+
+.benefit-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.benefit-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .benefit-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+.blue {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Research Papers Section */
+.research-paper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    transition: transform 0.2s;
+}
+
+.research-paper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.paper-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.paper-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.research-paper h2 {
+    color: #007bff;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+
+.research-paper ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.75rem 0;
+}
+
+.research-paper li {
+    padding: 0.3rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.research-paper li:before {
+    content: "•";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}
+
+.paper-link {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    margin-top: 0.75rem;
+    transition: all 0.2s;
+}
+
+.paper-link:hover {
+    background: #007bff;
+    color: white;
+}
+
+.pdf-icon {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .paper-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .paper-image {
+        order: -1;
+        margin-bottom: 1rem;
+    }
 } 
