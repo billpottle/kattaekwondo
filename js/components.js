@@ -47,6 +47,7 @@ function includeHTML() {
                             <a href="#" class="nav-link">About</a>
                             <ul class="dropdown">
                                 <li><a href="${pagesPath}/about/school-history.html">School History</a></li>
+                                <li><a href="${pagesPath}/about/press.html">Press Coverage</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
