@@ -833,6 +833,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s;
+    padding: 1rem;
 }
 
 .press-box:hover {
@@ -845,9 +846,9 @@ body {
     height: 150px;
     object-fit: contain;
     background: #f8f9fa;
-    padding: 0.5rem;
     cursor: pointer;
     transition: opacity 0.2s;
+    object-position: center;
 }
 
 .press-image:hover {
@@ -855,8 +856,7 @@ body {
 }
 
 .press-content {
-    padding: 1.5rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
 .press-content h2 {
@@ -883,43 +883,10 @@ body {
     }
 }
 
-/* Add horizontal layout for multiple images */
-.press-box:has(a + a) {
-    display: flex;
-    flex-direction: column;
-}
-
-.press-box:has(a + a) .press-content {
-    order: 2;
-}
-
-/* Create a wrapper for multiple images */
-.press-box:has(a + a) {
-    padding-top: 1rem;
-}
-
-.press-box:has(a + a) {
-    display: flex;
-    flex-direction: column;
-}
-
-.press-box:has(a + a) > a {
-    flex: 1;
-    display: inline-block;
-}
-
-/* Adjust image sizing for side-by-side layout */
-.press-box:has(a + a) .press-image {
-    height: 120px;
-    width: auto;
-    margin: 0 auto;
-}
-
 .image-container {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -928,5 +895,6 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    max-width: 45%;
+    align-items: center;
+    max-width: 50%;
 } 
